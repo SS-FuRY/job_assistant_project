@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head><title>Upload Resume</title></head>
+<body>
+    <h2>Upload Your Resume</h2>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="resume">Resume (PDF/DOCX):</label>
+        <input type="file" name="resume" required><br><br>
+
+        <h3>Job Preferences</h3>
+        <label for="role">Role:</label><input type="text" name="role"><br>
+        <label for="location">Location:</label><input type="text" name="location"><br>
+        <label for="industry">Industry:</label><input type="text" name="industry"><br>
+        <label for="salary">Expected Salary:</label><input type="text" name="salary"><br><br>
+
+        <button type="submit">Continue</button>
+    </form>
+</body>
+</html>

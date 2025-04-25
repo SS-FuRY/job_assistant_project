@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head><title>Dashboard</title></head>
+<body>
+    <h1>🧾 Application Dashboard</h1>
+    <table border="1">
+        <tr>
+            <th>Job Title</th>
+            <th>Company</th>
+            <th>Location</th>
+            <th>Link</th>
+            <th>Status</th>
+        </tr>
+        {% for job in jobs %}
+        <tr>
+            <td>{{ job[0] }}</td>
+            <td>{{ job[1] }}</td>
+            <td>{{ job[2] }}</td>
+            <td><a href="{{ job[3] }}" target="_blank">Apply Link</a></td>
+            <td>{{ job[4] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
